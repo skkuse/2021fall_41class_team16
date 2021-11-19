@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: Pooled Box
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 8e4cee466b85f2d419dc974fbe7a7310,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: ccfab794715b02d4fba0ccb1c8181862,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export pool\r\n    \r\n    __Boolean_0:
     %SystemBoolean, null\r\n    __obj_0: %UnityEngineGameObject, this\r\n    __instance_0:

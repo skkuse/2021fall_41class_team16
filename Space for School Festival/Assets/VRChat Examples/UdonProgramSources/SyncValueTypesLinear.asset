@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: SyncValueTypesLinear
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: a1cf8e06488255841b533456021c89aa,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 065970ee96ba7aa44ab72f25bc632119,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export uiText\r\n    .sync boolValue, linear\r\n   
     .sync intValue, linear\r\n    .sync floatValue, linear\r\n    .sync stringValue,
