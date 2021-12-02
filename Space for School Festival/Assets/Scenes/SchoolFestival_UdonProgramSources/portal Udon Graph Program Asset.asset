@@ -34,7 +34,7 @@ MonoBehaviour:
     nodes:
     - fullName: Event_Interact
       uid: c5d58bda-d2bd-4851-bada-f6561d40f7fc
-      position: {x: 417.11005, y: -25.030037}
+      position: {x: 417.9278, y: -81.44816}
       nodeUIDs: []
       flowUIDs:
       - 5a409282-d7a8-4a0b-b83a-9ad9188fe701
@@ -52,7 +52,8 @@ MonoBehaviour:
       - a53b34ca-1910-4edb-9965-d368828baa24
       - 9d387e40-860a-4e95-aca5-aaaab924d67e
       - ee97751d-0483-4cfa-a144-f46e2b977bce
-      flowUIDs: []
+      flowUIDs:
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -117,7 +118,7 @@ MonoBehaviour:
     updateOrder: 0
   graphElementData: []
   viewTransform:
-    position: {x: 97.00001, y: 130}
-    scale: 0.8695652
+    position: {x: -345.6, y: 197.6}
+    scale: 1
   version: 1.0.0
   showAssembly: 0
