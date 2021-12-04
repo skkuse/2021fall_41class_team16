@@ -24,21 +24,22 @@ MonoBehaviour:
     __String_2: %SystemString, null\r\n    __String_3: %SystemString, null\r\n   
     __String_4: %SystemString, null\r\n    __String_5: %SystemString, null\r\n   
     __String_6: %SystemString, null\r\n    __String_7: %SystemString, null\r\n   
-    __instance_3: %UnityEngineUIText, null\r\n    __value_2: %SystemInt32, null\r\n   
-    __instance_4: %UnityEngineUIText, null\r\n    __value_3: %SystemString, null\r\n   
-    __instance_5: %VRCUdonUdonBehaviour, this\r\n    clickCount: %SystemInt32, null\r\n   
-    paticipantsNum: %UnityEngineUIText, null\r\n    participantsList: %UnityEngineUIText,
-    null\r\n    str: %SystemString, null\r\n    name: %UnityEngineUIText, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export OnClick\r\n    \r\n    OnClick:\r\n    \r\n        PUSH, clickCount\r\n       
-    PUSH, __Int32_1\r\n        PUSH, __value_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    __VRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null\r\n    __value_2: %SystemInt32,
+    null\r\n    __instance_3: %UnityEngineUIText, null\r\n    __value_3: %SystemString,
+    null\r\n    __instance_4: %VRCUdonUdonBehaviour, this\r\n    clickCount: %SystemInt32,
+    null\r\n    paticipantsNum: %UnityEngineUIText, null\r\n    participantsList:
+    %UnityEngineUIText, null\r\n    str: %SystemString, null\r\n    name: %UnityEngineUIText,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export OnClick\r\n    \r\n   
+    OnClick:\r\n    \r\n        PUSH, clickCount\r\n        PUSH, __Int32_1\r\n       
+    PUSH, __value_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
     PUSH, __instance_0\r\n        PUSH, __symbolName_0\r\n        PUSH, __value_0\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     PUSH, paticipantsNum\r\n        PUSH, __instance_1\r\n        COPY\r\n       
     PUSH, clickCount\r\n        PUSH, __value_1\r\n        EXTERN, \"SystemInt32.__ToString__SystemString\"\r\n       
     PUSH, __instance_1\r\n        PUSH, __value_1\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n       
-    PUSH, str\r\n        PUSH, __String_0\r\n        COPY\r\n        PUSH, name\r\n       
-    PUSH, __instance_3\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH,
-    __String_6\r\n        EXTERN, \"UnityEngineUIText.__get_text__SystemString\"\r\n       
+    PUSH, str\r\n        PUSH, __String_0\r\n        COPY\r\n        PUSH, __VRCPlayerApi_0\r\n       
+    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, __VRCPlayerApi_0\r\n        PUSH, __String_6\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n       
     PUSH, __String_6\r\n        PUSH, __String_7\r\n        PUSH, __String_4\r\n       
     EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
     PUSH, clickCount\r\n        PUSH, __String_5\r\n        EXTERN, \"SystemConvert.__ToString__SystemInt32__SystemString\"\r\n       
@@ -48,10 +49,10 @@ MonoBehaviour:
     EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
     PUSH, __String_0\r\n        PUSH, __String_1\r\n        PUSH, str\r\n       
     EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
-    PUSH, participantsList\r\n        PUSH, __instance_4\r\n        COPY\r\n       
-    PUSH, str\r\n        PUSH, __value_3\r\n        COPY\r\n        PUSH, __instance_4\r\n       
+    PUSH, participantsList\r\n        PUSH, __instance_3\r\n        COPY\r\n       
+    PUSH, str\r\n        PUSH, __value_3\r\n        COPY\r\n        PUSH, __instance_3\r\n       
     PUSH, __value_3\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n       
-    PUSH, __instance_5\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n       
+    PUSH, __instance_4\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -175,7 +176,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Event_Custom
       uid: e04053c6-6b73-443c-b49c-c838203a6e08
-      position: {x: 249.17627, y: -255.73376}
+      position: {x: 250.21523, y: -253.04367}
       nodeUIDs:
       - 
       flowUIDs:
@@ -318,20 +319,11 @@ MonoBehaviour:
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: 
-    - fullName: UnityEngineUIText.__get_text__SystemString
-      uid: 696eaaea-b79b-475f-ba06-b37dfebfff6b
-      position: {x: -158.44122, y: 206.8917}
-      nodeUIDs:
-      - 6794cc53-6347-4e4d-aa24-cd5e4ba54401
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
       uid: a95e3091-8f62-4cdc-9d3b-615cd1a1ef87
       position: {x: 26.925049, y: 205.9155}
       nodeUIDs:
-      - 696eaaea-b79b-475f-ba06-b37dfebfff6b
+      - b45b331c-a6dd-4e26-b225-56a087320fc6|0
       - 
       flowUIDs: []
       nodeValues:
@@ -374,22 +366,26 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: 'System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|,    '
-    - fullName: Get_Variable
-      uid: 6794cc53-6347-4e4d-aa24-cd5e4ba54401
-      position: {x: -327.44122, y: 205.1427}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|67601142-710b-4e20-bbe6-23452d1a62d4
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid
       uid: 4ad91107-e34b-4c8e-aced-8b59ceef7cba
       position: {x: 1330.1213, y: -243.68982}
       nodeUIDs:
       - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi
+      uid: 38f79e0f-7fba-44c6-8a13-1ee5c8ffdf80
+      position: {x: -388.251, y: 225.25496}
+      nodeUIDs: []
+      flowUIDs: []
+      nodeValues: []
+    - fullName: VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString
+      uid: b45b331c-a6dd-4e26-b225-56a087320fc6
+      position: {x: -187.50204, y: 222.75699}
+      nodeUIDs:
+      - 38f79e0f-7fba-44c6-8a13-1ee5c8ffdf80|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -400,7 +396,7 @@ MonoBehaviour:
     uid: 27c5939c-5a9d-45ee-9c7b-b2df681039b8
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":13.0,"y":26.0,"width":218.0,"height":200.0}}'
   viewTransform:
-    position: {x: 255, y: 332}
-    scale: 0.49717674
+    position: {x: 254, y: 322}
+    scale: 0.57175326
   version: 1.0.0
   showAssembly: 0
