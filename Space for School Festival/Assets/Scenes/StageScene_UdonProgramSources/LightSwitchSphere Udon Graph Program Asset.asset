@@ -117,7 +117,7 @@ MonoBehaviour:
     updateOrder: 0
   graphElementData: []
   viewTransform:
-    position: {x: 155, y: 279}
+    position: {x: 259, y: 390}
     scale: 0.65751624
   version: 1.0.0
   showAssembly: 0
