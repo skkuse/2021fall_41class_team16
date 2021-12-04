@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: MoveFront Udon Graph Program Asset
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 5d037240b699c56478005dfd6e2293ab,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export spotLight\r\n    \r\n    __instance_0:
+    %UnityEngineTransform, this\r\n    __value_0: %UnityEngineVector3, null\r\n   
+    __Vector3_0: %UnityEngineVector3, null\r\n    __Vector3_1: %UnityEngineVector3,
+    null\r\n    __instance_2: %UnityEngineTransform, this\r\n    __instance_1: %UnityEngineGameObject,
+    this\r\n    __instance_3: %VRCUdonUdonBehaviour, this\r\n    spotLight: %UnityEngineGameObject,
+    this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _interact\r\n   
+    \r\n    _interact:\r\n    \r\n        PUSH, spotLight\r\n        PUSH, __instance_1\r\n       
+    COPY\r\n        PUSH, __instance_1\r\n        PUSH, __instance_0\r\n        EXTERN,
+    \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n        PUSH,
+    spotLight\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_0\r\n       
+    PUSH, __instance_2\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH,
+    __Vector3_1\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
+    PUSH, __Vector3_0\r\n        PUSH, __Vector3_1\r\n        PUSH, __value_0\r\n       
+    EXTERN, \"UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3\"\r\n       
+    PUSH, __instance_0\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, __instance_3\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Variable_UnityEngineGameObject
+      uid: d503d7a5-8e11-4893-b4c4-1ae8d727cc09
+      position: {x: -3598.4287, y: 165.82224}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|spotLight
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 5699e54f-eb35-4620-a80c-81a457a2cd92
+      position: {x: -6.1069946, y: -30.83054}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|d503d7a5-8e11-4893-b4c4-1ae8d727cc09
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineGameObject.__get_transform__UnityEngineTransform
+      uid: 02fe93c8-e176-47e6-b49a-89d6dda787d0
+      position: {x: 214.95297, y: -32.345554}
+      nodeUIDs:
+      - 5699e54f-eb35-4620-a80c-81a457a2cd92
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid
+      uid: 2796491c-23cc-4327-93f5-e8640952da83
+      position: {x: 817.623, y: -102.67054}
+      nodeUIDs:
+      - 02fe93c8-e176-47e6-b49a-89d6dda787d0
+      - c6ad422f-79d8-45d5-9edb-01dc0eccaba1
+      flowUIDs:
+      - da4972e1-7cd2-4c51-a22e-c36ab89465f6
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":30.0,"z":0.0}
+    - fullName: Event_Interact
+      uid: 4a2854b5-efd7-4749-9bb1-a89f59f623e5
+      position: {x: 596.483, y: -123.64556}
+      nodeUIDs: []
+      flowUIDs:
+      - 2796491c-23cc-4327-93f5-e8640952da83
+      nodeValues: []
+    - fullName: UnityEngineTransform.__get_position__UnityEngineVector3
+      uid: 07943b73-d545-4e53-87c5-04101506d900
+      position: {x: 369.08044, y: 115.20195}
+      nodeUIDs:
+      - 02fe93c8-e176-47e6-b49a-89d6dda787d0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3
+      uid: c6ad422f-79d8-45d5-9edb-01dc0eccaba1
+      position: {x: 563.63055, y: 91.62194}
+      nodeUIDs:
+      - 
+      - 07943b73-d545-4e53-87c5-04101506d900
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":3.0,"y":0.0,"z":0.0}
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid
+      uid: da4972e1-7cd2-4c51-a22e-c36ab89465f6
+      position: {x: 1051.0054, y: -85.624374}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    updateOrder: 0
+  graphElementData: []
+  viewTransform:
+    position: {x: 30, y: 316}
+    scale: 0.9474606
+  version: 1.0.0
+  showAssembly: 0
