@@ -117,10 +117,10 @@ MonoBehaviour:
     updateOrder: 0
   graphElementData:
   - type: 5
-    uid: 757e850f-ad11-497b-8731-5f79041c328c
+    uid: 7deaa944-8d78-4ff8-8d69-76d3fbf6c8c5
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":200.0,"height":150.0}}'
   viewTransform:
-    position: {x: 235, y: 467}
-    scale: 0.8695652
+    position: {x: -103, y: 521}
+    scale: 1
   version: 1.0.0
   showAssembly: 0

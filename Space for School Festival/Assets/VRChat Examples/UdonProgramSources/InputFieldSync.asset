@@ -263,8 +263,8 @@ MonoBehaviour:
     jsonData: '{"uid":"6cae173a-248b-4544-808f-bec85c802886","layout":{"serializedVersion":"2","x":550.0,"y":-705.0,"width":450.0,"height":308.0},"containedElements":["c5020263-8ec9-40ee-8935-86e91657ae20","5bc66cb4-befa-4100-a7a2-fd6498d7cd36","3e53df3f-8db9-465d-b828-687dc1ee22e0"],"title":"Approve
       Ownership Transfers","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: e027c6ca-385b-4a09-b984-66d2f4f38c3e
-    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":13.0,"y":26.0,"width":223.0,"height":194.0}}'
+    uid: 84b68147-6aa8-440d-b9a3-20635f6383b8
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":5.0,"y":380.0,"width":226.0,"height":283.0}}'
   - type: 4
     uid: 375ae574-056c-4f5d-a57b-0c9c2c87c61a
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
@@ -278,7 +278,7 @@ MonoBehaviour:
       UI is changed, check that it''s different than the variable, then become owner
       and update it","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   viewTransform:
-    position: {x: 438, y: 347}
+    position: {x: 641, y: 316}
     scale: 0.7561437
   version: 1.0.0
   showAssembly: 0

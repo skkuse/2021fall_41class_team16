@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections;
 
 public class Clock : MonoBehaviour {
@@ -6,22 +7,21 @@ public class Clock : MonoBehaviour {
 //-----------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------
 //
-//  Simple Clock Script / Andre "AEG" Bürger / VIS-Games 2012
+//  Simple Clock Script / Andre "AEG" Bï¿½rger / VIS-Games 2012
 //
 //-----------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------
 
     //-- set start time 00:00
-    public int minutes = 0;
-    public int hour = 0;
+    int minutes, hour, seconds, millisecond;
+    DateTime currentTime;
     
     //-- time speed factor
     public float clockSpeed = 1.0f;     // 1.0f = realtime, < 1.0f = slower, > 1.0f = faster
+    float msecs;
 
     //-- internal vars
-    int seconds;
-    float msecs;
     GameObject pointerSeconds;
     GameObject pointerMinutes;
     GameObject pointerHours;
@@ -34,19 +34,25 @@ void Start()
     pointerMinutes = transform.Find("rotation_axis_pointer_minutes").gameObject;
     pointerHours   = transform.Find("rotation_axis_pointer_hour").gameObject;
 
-    msecs = 0.0f;
-    seconds = 0;
+    currentTime = DateTime.Now;
+    hour = currentTime.Hour;
+    minutes = currentTime.Minute;
+    seconds = currentTime.Second;
+    millisecond = currentTime.Millisecond;
+    msecs = millisecond * 0.01f;
+    
+    
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------
 void Update() 
 {
-    //-- calculate time
+    // -- calculate time
     msecs += Time.deltaTime * clockSpeed;
-    if(msecs >= 1.0f)
+    if(msecs >= 1)
     {
-        msecs -= 1.0f;
+        msecs -= 1;
         seconds++;
         if(seconds >= 60)
         {
