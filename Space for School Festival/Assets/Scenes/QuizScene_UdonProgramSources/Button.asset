@@ -22,21 +22,22 @@ MonoBehaviour:
     %UnityEngineUIText, null\r\n    __value_0: %SystemString, null\r\n    __Int32_1:
     %SystemInt32, null\r\n    __Int32_2: %SystemInt32, null\r\n    __instance_3:
     %UnityEngineUIText, null\r\n    __value_1: %SystemString, null\r\n    __instance_4:
-    %SystemStringArray, null\r\n    __Int32_3: %SystemInt32, null\r\n    __tempValue_0:
-    %SystemObject, null\r\n    __instance_5: %UnityEngineUIText, null\r\n    __value_2:
-    %SystemString, null\r\n    clickCount: %SystemInt32, null\r\n    __returnValue:
-    %SystemObject, null\r\n    answer: %SystemStringArray, null\r\n    answeridx:
-    %SystemInt32, null\r\n    Description: %UnityEngineUIText, null\r\n    userInput:
-    %UnityEngineUIInputField, null\r\n    quiz: %SystemStringArray, null\r\n    quizidx:
-    %SystemInt32, null\r\n    Feedback: %UnityEngineUIText, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export OnClick\r\n    \r\n    OnClick:\r\n    \r\n        PUSH, userInput\r\n       
-    PUSH, __instance_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH,
-    __String_0\r\n        EXTERN, \"UnityEngineUIInputField.__get_text__SystemString\"\r\n       
-    PUSH, answer\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n       
-    PUSH, answeridx\r\n        PUSH, __String_1\r\n        EXTERN, \"SystemStringArray.__Get__SystemInt32__SystemString\"\r\n       
+    %SystemStringArray, null\r\n    __Int32_3: %SystemInt32, null\r\n    __Int32_4:
+    %SystemInt32, null\r\n    __Int32_5: %SystemInt32, null\r\n    __instance_5:
+    %UnityEngineUIText, null\r\n    __value_2: %SystemString, null\r\n    clickCount:
+    %SystemInt32, null\r\n    __returnValue: %SystemObject, null\r\n    answer: %SystemStringArray,
+    null\r\n    answeridx: %SystemInt32, null\r\n    Description: %UnityEngineUIText,
+    null\r\n    userInput: %UnityEngineUIInputField, null\r\n    quiz: %SystemStringArray,
+    null\r\n    quizidx: %SystemInt32, null\r\n    Feedback: %UnityEngineUIText,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export OnClick\r\n    \r\n   
+    OnClick:\r\n    \r\n        PUSH, userInput\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, __instance_0\r\n        PUSH, __String_0\r\n        EXTERN,
+    \"UnityEngineUIInputField.__get_text__SystemString\"\r\n        PUSH, answer\r\n       
+    PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
+    answeridx\r\n        PUSH, __String_1\r\n        EXTERN, \"SystemStringArray.__Get__SystemInt32__SystemString\"\r\n       
     PUSH, __String_0\r\n        PUSH, __String_1\r\n        PUSH, __Boolean_0\r\n       
     EXTERN, \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000158\r\n        PUSH, Feedback\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000164\r\n        PUSH, Feedback\r\n       
     PUSH, __instance_2\r\n        COPY\r\n        PUSH, __instance_2\r\n        PUSH,
     __value_0\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n       
     PUSH, answeridx\r\n        PUSH, __Int32_2\r\n        PUSH, answeridx\r\n       
@@ -45,8 +46,9 @@ MonoBehaviour:
     quiz\r\n        PUSH, __instance_4\r\n        COPY\r\n        PUSH, __instance_4\r\n       
     PUSH, quizidx\r\n        PUSH, __value_1\r\n        EXTERN, \"SystemStringArray.__Get__SystemInt32__SystemString\"\r\n       
     PUSH, __instance_3\r\n        PUSH, __value_1\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n       
-    PUSH, __tempValue_0\r\n        PUSH, quizidx\r\n        COPY\r\n        JUMP,
-    0x00000184\r\n        PUSH, Feedback\r\n        PUSH, __instance_5\r\n       
+    PUSH, quizidx\r\n        PUSH, __Int32_5\r\n        PUSH, quizidx\r\n       
+    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x00000190\r\n        PUSH, Feedback\r\n        PUSH, __instance_5\r\n       
     COPY\r\n        PUSH, __instance_5\r\n        PUSH, __value_2\r\n        EXTERN,
     \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n        JUMP, 0xFFFFFFFC\r\n   
     \r\n\r\n.code_end\r\n"
@@ -136,7 +138,7 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String[], mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|{"value":["Start","a","b","c","d","e","f","g","h","i","j"]}
+          PublicKeyToken=b77a5c561934e089|{"value":["GO","1398","C","No","8","#"]}
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|answer
       - unityObjectValue: {fileID: 0}
@@ -335,7 +337,10 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String[], mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|{"value":["Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Quiz8","Quiz9","Quiz10"]}
+          PublicKeyToken=b77a5c561934e089|{"value":["When did Sungkyunkwan University
+          open?","What languages do you learn in programming basics and practice
+          classes?(write in capital)","Is HTML a programming language?(Yes/No)","1
+          byte = ? bit","How to comment out a line in Python?","Congratulation!!"]}
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|quiz
       - unityObjectValue: {fileID: 0}
@@ -493,7 +498,7 @@ MonoBehaviour:
       position: {x: 1032.44, y: -417}
       nodeUIDs:
       - 
-      - 
+      - a0e88a47-2775-449d-9ce4-01d5579c10d2|0
       - 
       flowUIDs: []
       nodeValues:
@@ -539,13 +544,13 @@ MonoBehaviour:
       event can have any name we want as long as we make it the same on the UI item
       that triggers it.","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: 341ccf18-ec9b-4e89-808b-20dd9b64e69a
-    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":2.0,"y":135.0,"width":269.0,"height":286.0}}'
+    uid: a7776c07-5010-4a89-93dd-cc823e6eb473
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":3.0,"y":137.0,"width":269.0,"height":286.0}}'
   - type: 4
     uid: 2436f4f3-e762-48a3-87e4-caba9dc478b4
     jsonData: '{"visible":false,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 439, y: 413}
-    scale: 0.7561437
+    position: {x: 594, y: 478}
+    scale: 1
   version: 1.0.0
   showAssembly: 1
