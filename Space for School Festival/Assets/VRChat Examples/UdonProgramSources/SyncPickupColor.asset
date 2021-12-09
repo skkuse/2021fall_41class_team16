@@ -131,8 +131,7 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|_Color
       - unityObjectValue: {fileID: 0}
-        stringValue: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null|{"r":0.0,"g":0.0,"b":0.0,"a":0.0}
+        stringValue: 
     - fullName: Get_Variable
       uid: bd8931dc-3bd3-40e9-a26e-6cf436b982e6
       position: {x: 540, y: -445}
@@ -168,8 +167,7 @@ MonoBehaviour:
       - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
+        stringValue: 
     - fullName: UnityEngineColor.__LerpUnclamped__UnityEngineColor_UnityEngineColor_SystemSingle__UnityEngineColor
       uid: 0701e267-39fc-475f-9be4-7bd0bb4f139d
       position: {x: -350, y: -0}
@@ -180,13 +178,11 @@ MonoBehaviour:
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null|{"r":0.0,"g":0.0,"b":0.0,"a":0.0}
+        stringValue: 
       - unityObjectValue: {fileID: 0}
-        stringValue: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null|{"r":0.0,"g":0.0,"b":0.0,"a":0.0}
+        stringValue: 
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+        stringValue: 
     - fullName: Variable_UnityEngineColor
       uid: ad1686e1-53e2-41bb-8b2c-3a6723005bfc
       position: {x: -1056, y: -624}
@@ -259,7 +255,6 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - 0701e267-39fc-475f-9be4-7bd0bb4f139d|0
-      - 
       flowUIDs:
       - 
       nodeValues:
@@ -267,9 +262,6 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|65de1c25-d232-4346-b7c7-c3d0e72f0104
       - unityObjectValue: {fileID: 0}
         stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
     - fullName: UnityEngineMathf.__Sin__SystemSingle__SystemSingle
       uid: db5ebdae-e505-4cca-93d3-d134b1844c41
       position: {x: -540, y: 110}
@@ -278,7 +270,7 @@ MonoBehaviour:
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+        stringValue: 
     - fullName: Block
       uid: 25427eac-ecd5-499e-ae13-77a54a55ef50
       position: {x: -370, y: -570}
@@ -296,11 +288,9 @@ MonoBehaviour:
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
+        stringValue: 
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
+        stringValue: 
     - fullName: VRCSDK3ComponentsVRCPickup.__get_IsHeld__SystemBoolean
       uid: f36cfda1-def5-42f5-83d2-5f43e4ed3ed4
       position: {x: -1040, y: -270}
@@ -425,7 +415,7 @@ MonoBehaviour:
     uid: 375ae574-056c-4f5d-a57b-0c9c2c87c61a
     jsonData: '{"visible":false,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 445, y: 613}
-    scale: 0.65751624
+    position: {x: 1124.612, y: -2.1280518}
+    scale: 1.15
   version: 1.0.0
   showAssembly: 0

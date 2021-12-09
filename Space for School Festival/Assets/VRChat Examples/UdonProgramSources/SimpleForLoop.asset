@@ -214,7 +214,7 @@ MonoBehaviour:
       each time, with the ''int'' output set to the number of the loop we''re on -
       0,1,2 etc.","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   viewTransform:
-    position: {x: 154, y: 751}
-    scale: 0.7561437
+    position: {x: 0, y: 0}
+    scale: 1
   version: 1.0.0
   showAssembly: 0

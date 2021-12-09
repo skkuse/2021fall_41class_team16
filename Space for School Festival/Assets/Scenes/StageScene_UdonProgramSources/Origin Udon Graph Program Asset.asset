@@ -204,14 +204,14 @@ MonoBehaviour:
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null|{"x":40.0,"y":30.0,"z":0.0}
+          Culture=neutral, PublicKeyToken=null|{"x":25.0,"y":30.0,"z":0.0}
     updateOrder: 0
   graphElementData:
   - type: 5
     uid: 114a316d-7505-4d05-a2ed-407b8641972f
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":13.0,"y":143.0,"width":326.0,"height":262.0}}'
   viewTransform:
-    position: {x: 440, y: 385}
-    scale: 0.57175326
+    position: {x: 308, y: 346}
+    scale: 0.7561437
   version: 1.0.0
   showAssembly: 0
