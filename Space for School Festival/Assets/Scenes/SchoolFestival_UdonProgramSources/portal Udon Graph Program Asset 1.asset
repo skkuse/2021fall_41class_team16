@@ -15,12 +15,12 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: c9d9eef722de24f46a5982e5e1d64fbd,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export TimerSystem\r\n    \r\n    __instance_0:
-    %VRCUdonUdonBehaviour, this\r\n    __eventName_0: %SystemString, null\r\n   
-    __String_0: %SystemString, null\r\n    TimerSystem: %VRCUdonUdonBehaviour, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, TimerSystem\r\n       
-    PUSH, __instance_0\r\n        COPY\r\n        PUSH, __String_0\r\n        PUSH,
-    __eventName_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH,
-    __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
+    %VRCUdonUdonBehaviour, this\r\n    __target_0: %VRCUdonCommonInterfacesNetworkEventTarget,
+    null\r\n    __eventName_0: %SystemString, null\r\n    TimerSystem: %VRCUdonUdonBehaviour,
+    this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _interact\r\n   
+    \r\n    _interact:\r\n    \r\n        PUSH, TimerSystem\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, __instance_0\r\n        PUSH, __target_0\r\n        PUSH,
+    __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -32,14 +32,14 @@ MonoBehaviour:
       position: {x: 357.53888, y: -66.38835}
       nodeUIDs: []
       flowUIDs:
-      - 74d08598-04cd-4302-9679-02be3089e153
+      - 63cd82b4-0865-405c-829f-3536745dc849
       nodeValues: []
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: 74d08598-04cd-4302-9679-02be3089e153
       position: {x: 573.21356, y: -44.334965}
       nodeUIDs:
-      - 4a933815-a81f-4d68-93c9-86fc32a257c6|0
-      - 15ff39da-2eda-4218-bf4c-dc7b4c419197|0
+      - 
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -89,10 +89,26 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|a2424740-73ed-4ca8-a2cc-07d5d3c94f2c
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid
+      uid: 63cd82b4-0865-405c-829f-3536745dc849
+      position: {x: 603.5001, y: 108.15002}
+      nodeUIDs:
+      - 4a933815-a81f-4d68-93c9-86fc32a257c6|0
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: VRC.Udon.Common.Interfaces.NetworkEventTarget, VRC.Udon.Common,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|All
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|OnStartClicked
     updateOrder: 0
   graphElementData: []
   viewTransform:
-    position: {x: 158.4, y: 118.4}
-    scale: 0.65751624
+    position: {x: 2, y: 193}
+    scale: 1
   version: 1.0.0
   showAssembly: 0
