@@ -20,7 +20,7 @@ MonoBehaviour:
     this\r\n    __original_0: %UnityEngineGameObject, this\r\n    __instance_0: %VRCUdonUdonBehaviour,
     this\r\n    __symbolName_0: %SystemString, null\r\n    __instance_3: %UnityEngineTransform,
     this\r\n    target: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export Spawn\r\n    \r\n    Spawn:\r\n    \r\n        PUSH, __instance_0\r\n       
+    .export Spawn1\r\n    \r\n    Spawn1:\r\n    \r\n        PUSH, __instance_0\r\n       
     PUSH, __symbolName_0\r\n        PUSH, __original_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
     PUSH, __original_0\r\n        PUSH, __clone_0\r\n        EXTERN, \"VRCInstantiate.__Instantiate__UnityEngineGameObject__UnityEngineGameObject\"\r\n       
     PUSH, __clone_0\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH,
@@ -35,14 +35,14 @@ MonoBehaviour:
     nodes:
     - fullName: Event_Custom
       uid: 5e36174c-f5b8-426e-a228-8929fa4c2ca9
-      position: {x: 181.13174, y: -181.1996}
+      position: {x: 180.99998, y: -184.49796}
       nodeUIDs:
       - 
       flowUIDs:
       - 20a14ae9-5d2e-403f-a61e-7cf59648e12f
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Spawn
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Spawn1
     - fullName: VRCInstantiate.__Instantiate__UnityEngineGameObject__UnityEngineGameObject
       uid: 20a14ae9-5d2e-403f-a61e-7cf59648e12f
       position: {x: 452.13168, y: -204.19948}
