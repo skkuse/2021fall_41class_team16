@@ -9,7 +9,7 @@ namespace Vket5.Circle2539.Timer
 {
     public class TimeSetter : UdonSharpBehaviour
     {
-        float minutes = 0;
+        float minutes = 3;
 
         float seconds = 0;
 
