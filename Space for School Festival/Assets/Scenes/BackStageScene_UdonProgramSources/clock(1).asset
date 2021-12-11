@@ -17,47 +17,43 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .export speed\r\n    .export pointerSecond\r\n   
     .export pointerMinute\r\n    .export pointerHour\r\n    \r\n    __instance_0:
     %UnityEngineTransform, this\r\n    __value_0: %UnityEngineVector3, null\r\n   
-    __instance_1: %UnityEngineGameObject, this\r\n    __instance_2: %VRCUdonUdonBehaviour,
-    this\r\n    __instance_3: %UnityEngineTransform, this\r\n    __value_1: %UnityEngineVector3,
-    null\r\n    __instance_4: %UnityEngineGameObject, this\r\n    __instance_5: %VRCUdonUdonBehaviour,
-    this\r\n    __instance_6: %UnityEngineTransform, this\r\n    __value_2: %UnityEngineVector3,
-    null\r\n    __instance_7: %UnityEngineGameObject, this\r\n    __instance_8: %VRCUdonUdonBehaviour,
-    this\r\n    __instance_9: %SystemDateTime, null\r\n    __instance_A: %SystemDateTime,
-    null\r\n    __instance_B: %SystemDateTime, null\r\n    __Vector3_0: %UnityEngineVector3,
-    null\r\n    __Single_0: %SystemSingle, null\r\n    __Single_1: %SystemSingle,
-    null\r\n    __Single_2: %SystemSingle, null\r\n    __Single_3: %SystemSingle,
-    null\r\n    __Single_4: %SystemSingle, null\r\n    __value_3: %SystemInt32, null\r\n   
-    __Single_5: %SystemSingle, null\r\n    __Single_6: %SystemSingle, null\r\n   
-    __value_4: %SystemInt32, null\r\n    __Vector3_1: %UnityEngineVector3, null\r\n   
-    __Single_7: %SystemSingle, null\r\n    __Single_8: %SystemSingle, null\r\n   
-    __Single_9: %SystemSingle, null\r\n    __value_5: %SystemInt32, null\r\n    __Vector3_2:
-    %UnityEngineVector3, null\r\n    __Single_A: %SystemSingle, null\r\n    __Single_B:
-    %SystemSingle, null\r\n    __Single_C: %SystemSingle, null\r\n    __value_6:
-    %SystemInt32, null\r\n    minute: %SystemInt32, null\r\n    second: %SystemInt32,
-    null\r\n    speed: %SystemSingle, null\r\n    setzero: %SystemInt32, null\r\n   
-    hour: %SystemInt32, null\r\n    rotationHour: %UnityEngineVector3, null\r\n   
-    rotationMinute: %UnityEngineVector3, null\r\n    rotationSecond: %UnityEngineVector3,
-    null\r\n    pointerSecond: %UnityEngineGameObject, this\r\n    pointerMinute:
-    %UnityEngineGameObject, this\r\n    pointerHour: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _update\r\n    \r\n    _update:\r\n    \r\n        PUSH, pointerHour\r\n       
-    PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
-    __instance_0\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
-    PUSH, __instance_0\r\n        PUSH, rotationHour\r\n        EXTERN, \"UnityEngineTransform.__set_eulerAngles__UnityEngineVector3__SystemVoid\"\r\n       
-    PUSH, __instance_2\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n       
-    PUSH, pointerMinute\r\n        PUSH, __instance_4\r\n        COPY\r\n       
-    PUSH, __instance_4\r\n        PUSH, __instance_3\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
-    PUSH, __instance_3\r\n        PUSH, rotationMinute\r\n        EXTERN, \"UnityEngineTransform.__set_eulerAngles__UnityEngineVector3__SystemVoid\"\r\n       
-    PUSH, __instance_5\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n       
-    PUSH, pointerSecond\r\n        PUSH, __instance_7\r\n        COPY\r\n       
-    PUSH, __instance_7\r\n        PUSH, __instance_6\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
-    PUSH, __instance_6\r\n        PUSH, rotationSecond\r\n        EXTERN, \"UnityEngineTransform.__set_eulerAngles__UnityEngineVector3__SystemVoid\"\r\n       
-    PUSH, __instance_8\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n       
-    PUSH, __instance_9\r\n        EXTERN, \"SystemDateTime.__get_Now__SystemDateTime\"\r\n       
-    PUSH, __instance_9\r\n        PUSH, hour\r\n        EXTERN, \"SystemDateTime.__get_Hour__SystemInt32\"\r\n       
-    PUSH, __instance_9\r\n        PUSH, __instance_A\r\n        COPY\r\n        PUSH,
-    __instance_9\r\n        PUSH, minute\r\n        EXTERN, \"SystemDateTime.__get_Minute__SystemInt32\"\r\n       
-    PUSH, __instance_9\r\n        PUSH, __instance_B\r\n        COPY\r\n        PUSH,
-    __instance_9\r\n        PUSH, second\r\n        EXTERN, \"SystemDateTime.__get_Second__SystemInt32\"\r\n       
+    __instance_1: %UnityEngineGameObject, this\r\n    __instance_2: %UnityEngineTransform,
+    this\r\n    __value_1: %UnityEngineVector3, null\r\n    __instance_3: %UnityEngineGameObject,
+    this\r\n    __instance_4: %UnityEngineTransform, this\r\n    __value_2: %UnityEngineVector3,
+    null\r\n    __instance_5: %UnityEngineGameObject, this\r\n    __instance_6: %SystemDateTime,
+    null\r\n    __instance_7: %SystemDateTime, null\r\n    __instance_8: %SystemDateTime,
+    null\r\n    __Vector3_0: %UnityEngineVector3, null\r\n    __Single_0: %SystemSingle,
+    null\r\n    __Single_1: %SystemSingle, null\r\n    __Single_2: %SystemSingle,
+    null\r\n    __Single_3: %SystemSingle, null\r\n    __Single_4: %SystemSingle,
+    null\r\n    __value_3: %SystemInt32, null\r\n    __Single_5: %SystemSingle, null\r\n   
+    __Single_6: %SystemSingle, null\r\n    __value_4: %SystemInt32, null\r\n    __Vector3_1:
+    %UnityEngineVector3, null\r\n    __Single_7: %SystemSingle, null\r\n    __Single_8:
+    %SystemSingle, null\r\n    __Single_9: %SystemSingle, null\r\n    __value_5:
+    %SystemInt32, null\r\n    __Vector3_2: %UnityEngineVector3, null\r\n    __Single_A:
+    %SystemSingle, null\r\n    __Single_B: %SystemSingle, null\r\n    __Single_C:
+    %SystemSingle, null\r\n    __value_6: %SystemInt32, null\r\n    minute: %SystemInt32,
+    null\r\n    second: %SystemInt32, null\r\n    speed: %SystemSingle, null\r\n   
+    setzero: %SystemInt32, null\r\n    hour: %SystemInt32, null\r\n    rotationHour:
+    %UnityEngineVector3, null\r\n    rotationMinute: %UnityEngineVector3, null\r\n   
+    rotationSecond: %UnityEngineVector3, null\r\n    pointerSecond: %UnityEngineGameObject,
+    this\r\n    pointerMinute: %UnityEngineGameObject, this\r\n    pointerHour: %UnityEngineGameObject,
+    this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _update\r\n    \r\n   
+    _update:\r\n    \r\n        PUSH, pointerHour\r\n        PUSH, __instance_1\r\n       
+    COPY\r\n        PUSH, __instance_1\r\n        PUSH, __instance_0\r\n        EXTERN,
+    \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n        PUSH,
+    __instance_0\r\n        PUSH, rotationHour\r\n        EXTERN, \"UnityEngineTransform.__set_eulerAngles__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, pointerMinute\r\n        PUSH, __instance_3\r\n        COPY\r\n       
+    PUSH, __instance_3\r\n        PUSH, __instance_2\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
+    PUSH, __instance_2\r\n        PUSH, rotationMinute\r\n        EXTERN, \"UnityEngineTransform.__set_eulerAngles__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, pointerSecond\r\n        PUSH, __instance_5\r\n        COPY\r\n       
+    PUSH, __instance_5\r\n        PUSH, __instance_4\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
+    PUSH, __instance_4\r\n        PUSH, rotationSecond\r\n        EXTERN, \"UnityEngineTransform.__set_eulerAngles__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, __instance_6\r\n        EXTERN, \"SystemDateTime.__get_Now__SystemDateTime\"\r\n       
+    PUSH, __instance_6\r\n        PUSH, hour\r\n        EXTERN, \"SystemDateTime.__get_Hour__SystemInt32\"\r\n       
+    PUSH, __instance_6\r\n        PUSH, __instance_7\r\n        COPY\r\n        PUSH,
+    __instance_6\r\n        PUSH, minute\r\n        EXTERN, \"SystemDateTime.__get_Minute__SystemInt32\"\r\n       
+    PUSH, __instance_6\r\n        PUSH, __instance_8\r\n        COPY\r\n        PUSH,
+    __instance_6\r\n        PUSH, second\r\n        EXTERN, \"SystemDateTime.__get_Second__SystemInt32\"\r\n       
     PUSH, hour\r\n        PUSH, __Single_4\r\n        EXTERN, \"SystemConvert.__ToSingle__SystemInt32__SystemSingle\"\r\n       
     PUSH, __Single_3\r\n        PUSH, __Single_4\r\n        PUSH, __Single_1\r\n       
     EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n       
@@ -621,7 +617,7 @@ MonoBehaviour:
       - 0338d8ae-0008-4878-9a19-ccd61370387a
       - 6c753020-dc4a-40d7-8ae4-e0eac5f1400c
       flowUIDs:
-      - 28e4a551-3c7e-4253-94d6-6b5bfb9ef47b
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -677,7 +673,7 @@ MonoBehaviour:
       - 9eaf2b68-e4e5-42c3-a286-2861a9cb57ac
       - 38968f49-1a34-4fb1-bc0d-73711c230b4a
       flowUIDs:
-      - 8f8bd3d5-ef17-4169-89f5-a1a899adbcde
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -700,7 +696,7 @@ MonoBehaviour:
       - 1a1935c8-bb19-40f2-8f35-08bf4779b0bd
       - 6c066e86-58b9-4ce9-82a3-554efa057d7a
       flowUIDs:
-      - 8e137519-0591-4e5b-bf54-2402ef2c60df
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -818,40 +814,13 @@ MonoBehaviour:
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
-    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid
-      uid: 28e4a551-3c7e-4253-94d6-6b5bfb9ef47b
-      position: {x: 948.0835, y: 1025.0616}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid
-      uid: 8f8bd3d5-ef17-4169-89f5-a1a899adbcde
-      position: {x: 947.7276, y: 1219.9165}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid
-      uid: 8e137519-0591-4e5b-bf54-2402ef2c60df
-      position: {x: 935.72406, y: 1401}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     updateOrder: 0
   graphElementData:
   - type: 5
     uid: 7deaa944-8d78-4ff8-8d69-76d3fbf6c8c5
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":24.0,"y":88.0,"width":244.0,"height":482.0}}'
   viewTransform:
-    position: {x: 508, y: 47}
-    scale: 0.57175326
+    position: {x: 348, y: -181}
+    scale: 0.7561437
   version: 1.0.0
   showAssembly: 0

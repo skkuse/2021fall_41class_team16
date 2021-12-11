@@ -350,7 +350,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: Variable_UnityEngineUITextArray
       uid: f6465576-2ca4-49b7-b244-c16d192313bb
-      position: {x: -6405.459, y: -2225.5117}
+      position: {x: -7123.8496, y: -3082.2393}
       nodeUIDs:
       - 
       - 
@@ -396,7 +396,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_SystemString
       uid: a45d13ca-391c-4276-bf59-d138d6860440
-      position: {x: 0, y: 0}
+      position: {x: -718.3905, y: -856.7275}
       nodeUIDs:
       - 
       - 
@@ -447,7 +447,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Variable_UnityEngineUIText
       uid: 8675d829-1d81-42ff-b7ba-dd48268cc6db
-      position: {x: 0, y: 0}
+      position: {x: -718.3905, y: -856.7275}
       nodeUIDs:
       - 
       - 
@@ -505,7 +505,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Variable_SystemString
       uid: f33cf18c-460c-48e1-84b8-445c54ed532c
-      position: {x: 0, y: 0}
+      position: {x: -718.3905, y: -856.7275}
       nodeUIDs:
       - 
       - 
@@ -578,7 +578,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Variable_UnityEngineUIText
       uid: a7a6d0cd-af1f-4b1f-92b1-33ca6b70f6fe
-      position: {x: -6405.459, y: -2225.5117}
+      position: {x: -7123.8496, y: -3082.2393}
       nodeUIDs:
       - 
       - 
@@ -644,7 +644,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_SystemInt32Array
       uid: 020bc620-c374-4e1d-9140-f50326ecfb96
-      position: {x: 0, y: 0}
+      position: {x: -718.3905, y: -856.7275}
       nodeUIDs:
       - 
       - 
@@ -668,7 +668,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemInt32Array
       uid: a69a9682-d90c-4c40-b5a1-117fb551126f
-      position: {x: 0, y: 0}
+      position: {x: -718.3905, y: -856.7275}
       nodeUIDs:
       - 
       - 
@@ -730,7 +730,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_SystemInt32Array
       uid: ea72bdfe-18c4-49dc-a424-b039ac20607e
-      position: {x: -279.56158, y: -834.65356}
+      position: {x: -997.9521, y: -1691.3811}
       nodeUIDs:
       - 
       - 

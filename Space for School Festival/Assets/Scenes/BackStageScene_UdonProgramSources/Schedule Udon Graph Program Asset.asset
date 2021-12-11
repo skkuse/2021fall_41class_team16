@@ -202,7 +202,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: Get_Variable
       uid: 38bd4b07-9fe8-420d-bd14-fe2c03a771b1
-      position: {x: 753.2871, y: 34.33493}
+      position: {x: 720, y: 17}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -252,7 +252,7 @@ MonoBehaviour:
     updateOrder: 0
   graphElementData: []
   viewTransform:
-    position: {x: 229, y: 363}
-    scale: 0.7561437
+    position: {x: -265, y: 384}
+    scale: 1
   version: 1.0.0
   showAssembly: 0
