@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
-  m_Name: Sphere Udon Graph Program Asset 1
+  m_Name: Reset sphere Udon Graph Program Asset
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 10d5eb584dd8c224892cd201c096b2b5,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 98ef7675dd55f8d45a4f2ed71c9299a9,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export TimerSystem\r\n    \r\n    __instance_0:
     %VRCUdonUdonBehaviour, this\r\n    __target_0: %VRCUdonCommonInterfacesNetworkEventTarget,
@@ -28,14 +28,30 @@ MonoBehaviour:
     description: 
     nodes:
     - fullName: Event_Interact
-      uid: e3525847-ccdc-4bf1-bce4-8de39f5cf5ea
-      position: {x: 490, y: 112.880005}
+      uid: 3771849e-fdde-4f7c-b047-e1ccf4db20f0
+      position: {x: 533.93005, y: 16.88316}
       nodeUIDs: []
       flowUIDs:
-      - b05a1cca-2098-44d2-aba1-19f93c52fe11
+      - 6e5a5697-89b3-4622-9688-97d8a906f8f7
       nodeValues: []
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid
+      uid: 6e5a5697-89b3-4622-9688-97d8a906f8f7
+      position: {x: 743.91437, y: 73.86384}
+      nodeUIDs:
+      - 882abd1d-0b1b-49a8-94c5-632617d8248f|0
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: VRC.Udon.Common.Interfaces.NetworkEventTarget, VRC.Udon.Common,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|All
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|OnResetClicked
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
-      uid: 8c5c4d2a-a418-4321-9483-2fd8ad058996
+      uid: c4cac102-72fa-4795-ac5b-7aff242dc28b
       position: {x: 0, y: 0}
       nodeUIDs:
       - 
@@ -58,36 +74,20 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
-      uid: ab9f327f-3cf6-4d9c-aa78-fb34a3ef637f
-      position: {x: 392.20007, y: 212.30005}
+      uid: 882abd1d-0b1b-49a8-94c5-632617d8248f
+      position: {x: 387.4802, y: 140.06165}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|8c5c4d2a-a418-4321-9483-2fd8ad058996
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|c4cac102-72fa-4795-ac5b-7aff242dc28b
       - unityObjectValue: {fileID: 0}
         stringValue: 
-    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid
-      uid: b05a1cca-2098-44d2-aba1-19f93c52fe11
-      position: {x: 730, y: 170}
-      nodeUIDs:
-      - ab9f327f-3cf6-4d9c-aa78-fb34a3ef637f|0
-      - 
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: VRC.Udon.Common.Interfaces.NetworkEventTarget, VRC.Udon.Common,
-          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|All
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|OnStopClicked
     updateOrder: 0
   graphElementData: []
   viewTransform:
-    position: {x: -77, y: -20}
-    scale: 1
+    position: {x: -0.00000590086, y: 68}
+    scale: 0.94768965
   version: 1.0.0
   showAssembly: 0
