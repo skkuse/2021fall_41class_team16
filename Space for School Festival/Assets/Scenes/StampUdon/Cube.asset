@@ -17,90 +17,93 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .export target\r\n    .export count\r\n   
     .export pickup\r\n    \r\n    __instance_0: %UnityEngineMeshRenderer, null\r\n   
     __instance_1: %UnityEngineGameObject, this\r\n    __type_0: %SystemType, null\r\n   
-    __Type_0: %SystemType, null\r\n    __Boolean_0: %SystemBoolean, null\r\n    __a_0:
-    %SystemString, null\r\n    __b_0: %SystemString, null\r\n    __instance_3: %UnityEngineMaterial,
-    null\r\n    __value_0: %UnityEngineColor, null\r\n    __Boolean_1: %SystemBoolean,
-    null\r\n    __a_1: %SystemString, null\r\n    __b_1: %SystemString, null\r\n   
-    __instance_4: %UnityEngineMaterial, null\r\n    __value_1: %UnityEngineColor,
+    __Type_0: %SystemType, null\r\n    __instance_2: %UnityEngineMaterial, null\r\n   
+    __value_0: %UnityEngineColor, null\r\n    __Boolean_0: %SystemBoolean, null\r\n   
+    __a_0: %SystemString, null\r\n    __b_0: %SystemString, null\r\n    __instance_4:
+    %UnityEngineMaterial, null\r\n    __value_1: %UnityEngineColor, null\r\n    __Boolean_1:
+    %SystemBoolean, null\r\n    __a_1: %SystemString, null\r\n    __b_1: %SystemString,
+    null\r\n    __instance_5: %UnityEngineMaterial, null\r\n    __value_2: %UnityEngineColor,
     null\r\n    __Boolean_2: %SystemBoolean, null\r\n    __a_2: %SystemString, null\r\n   
-    __b_2: %SystemString, null\r\n    __instance_5: %UnityEngineMaterial, null\r\n   
-    __value_2: %UnityEngineColor, null\r\n    __Boolean_3: %SystemBoolean, null\r\n   
-    __a_3: %SystemString, null\r\n    __b_3: %SystemString, null\r\n    __instance_6:
-    %UnityEngineMaterial, null\r\n    __value_3: %UnityEngineColor, null\r\n    __Boolean_4:
+    __b_2: %SystemString, null\r\n    __instance_6: %UnityEngineMaterial, null\r\n   
+    __value_3: %UnityEngineColor, null\r\n    __Boolean_3: %SystemBoolean, null\r\n   
+    __a_3: %SystemString, null\r\n    __b_3: %SystemString, null\r\n    __instance_7:
+    %UnityEngineMaterial, null\r\n    __value_4: %UnityEngineColor, null\r\n    __Boolean_4:
     %SystemBoolean, null\r\n    __a_4: %SystemString, null\r\n    __b_4: %SystemString,
-    null\r\n    __instance_7: %UnityEngineMaterial, null\r\n    __value_4: %UnityEngineColor,
+    null\r\n    __instance_8: %UnityEngineMaterial, null\r\n    __value_5: %UnityEngineColor,
     null\r\n    __Boolean_5: %SystemBoolean, null\r\n    __a_5: %SystemString, null\r\n   
-    __b_5: %SystemString, null\r\n    __instance_8: %UnityEngineMaterial, null\r\n   
-    __value_5: %UnityEngineColor, null\r\n    __Boolean_6: %SystemBoolean, null\r\n   
-    __a_6: %SystemString, null\r\n    __b_6: %SystemString, null\r\n    __instance_9:
-    %UnityEngineMaterial, null\r\n    __value_6: %UnityEngineColor, null\r\n    __Boolean_7:
+    __b_5: %SystemString, null\r\n    __instance_9: %UnityEngineMaterial, null\r\n   
+    __value_6: %UnityEngineColor, null\r\n    __Boolean_6: %SystemBoolean, null\r\n   
+    __a_6: %SystemString, null\r\n    __b_6: %SystemString, null\r\n    __instance_A:
+    %UnityEngineMaterial, null\r\n    __value_7: %UnityEngineColor, null\r\n    __Boolean_7:
     %SystemBoolean, null\r\n    __a_7: %SystemString, null\r\n    __b_7: %SystemString,
-    null\r\n    __instance_A: %UnityEngineMaterial, null\r\n    __value_7: %UnityEngineColor,
+    null\r\n    __instance_B: %UnityEngineMaterial, null\r\n    __value_8: %UnityEngineColor,
     null\r\n    __Boolean_8: %SystemBoolean, null\r\n    __a_8: %SystemString, null\r\n   
-    __b_8: %SystemString, null\r\n    __instance_2: %UnityEngineGameObject, this\r\n   
-    __instance_B: %UnityEngineMaterial, null\r\n    __value_8: %UnityEngineColor,
+    __b_8: %SystemString, null\r\n    __instance_3: %UnityEngineGameObject, this\r\n   
+    __instance_C: %UnityEngineMaterial, null\r\n    __value_9: %UnityEngineColor,
     null\r\n    target: %UnityEngineMaterial, null\r\n    count: %SystemInt32, null\r\n   
     pickup: %VRCSDK3ComponentsVRCPickup, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, __Type_0\r\n       
     PUSH, __type_0\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
     __type_0\r\n        PUSH, __instance_0\r\n        EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n       
     PUSH, __instance_0\r\n        PUSH, target\r\n        EXTERN, \"UnityEngineMeshRenderer.__get_material__UnityEngineMaterial\"\r\n       
+    PUSH, target\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH, __instance_2\r\n       
+    PUSH, __value_0\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPickupUseDown\r\n    \r\n    _onPickupUseDown:\r\n   
-    \r\n        PUSH, __instance_2\r\n        PUSH, __a_0\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
+    \r\n        PUSH, __instance_3\r\n        PUSH, __a_0\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
     PUSH, __a_0\r\n        PUSH, __b_0\r\n        PUSH, __Boolean_0\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000000D0\r\n        PUSH, target\r\n       
-    PUSH, __instance_3\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH,
-    __value_0\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        PUSH, __a_0\r\n        PUSH, __a_1\r\n        COPY\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_1\r\n        PUSH, __Boolean_1\r\n        EXTERN,
-    \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x00000148\r\n        PUSH, target\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000000FC\r\n        PUSH, target\r\n       
     PUSH, __instance_4\r\n        COPY\r\n        PUSH, __instance_4\r\n        PUSH,
     __value_1\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        PUSH, __a_0\r\n        PUSH, __a_2\r\n        COPY\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_2\r\n        PUSH, __Boolean_2\r\n        EXTERN,
+    JUMP, 0x000004BC\r\n        PUSH, __a_0\r\n        PUSH, __a_1\r\n        COPY\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_1\r\n        PUSH, __Boolean_1\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_2\r\n        JUMP_IF_FALSE, 0x000001C0\r\n        PUSH, target\r\n       
+    PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x00000174\r\n        PUSH, target\r\n       
     PUSH, __instance_5\r\n        COPY\r\n        PUSH, __instance_5\r\n        PUSH,
     __value_2\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        PUSH, __a_0\r\n        PUSH, __a_3\r\n        COPY\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_3\r\n        PUSH, __Boolean_3\r\n        EXTERN,
+    JUMP, 0x000004BC\r\n        PUSH, __a_0\r\n        PUSH, __a_2\r\n        COPY\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_2\r\n        PUSH, __Boolean_2\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_3\r\n        JUMP_IF_FALSE, 0x00000238\r\n        PUSH, target\r\n       
+    PUSH, __Boolean_2\r\n        JUMP_IF_FALSE, 0x000001EC\r\n        PUSH, target\r\n       
     PUSH, __instance_6\r\n        COPY\r\n        PUSH, __instance_6\r\n        PUSH,
     __value_3\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        PUSH, __a_0\r\n        PUSH, __a_4\r\n        COPY\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_4\r\n        PUSH, __Boolean_4\r\n        EXTERN,
+    JUMP, 0x000004BC\r\n        PUSH, __a_0\r\n        PUSH, __a_3\r\n        COPY\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_3\r\n        PUSH, __Boolean_3\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_4\r\n        JUMP_IF_FALSE, 0x000002B0\r\n        PUSH, target\r\n       
+    PUSH, __Boolean_3\r\n        JUMP_IF_FALSE, 0x00000264\r\n        PUSH, target\r\n       
     PUSH, __instance_7\r\n        COPY\r\n        PUSH, __instance_7\r\n        PUSH,
     __value_4\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        PUSH, __a_0\r\n        PUSH, __a_5\r\n        COPY\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_5\r\n        PUSH, __Boolean_5\r\n        EXTERN,
+    JUMP, 0x000004BC\r\n        PUSH, __a_0\r\n        PUSH, __a_4\r\n        COPY\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_4\r\n        PUSH, __Boolean_4\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_5\r\n        JUMP_IF_FALSE, 0x00000328\r\n        PUSH, target\r\n       
+    PUSH, __Boolean_4\r\n        JUMP_IF_FALSE, 0x000002DC\r\n        PUSH, target\r\n       
     PUSH, __instance_8\r\n        COPY\r\n        PUSH, __instance_8\r\n        PUSH,
     __value_5\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        PUSH, __a_0\r\n        PUSH, __a_6\r\n        COPY\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_6\r\n        PUSH, __Boolean_6\r\n        EXTERN,
+    JUMP, 0x000004BC\r\n        PUSH, __a_0\r\n        PUSH, __a_5\r\n        COPY\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_5\r\n        PUSH, __Boolean_5\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_6\r\n        JUMP_IF_FALSE, 0x000003A0\r\n        PUSH, target\r\n       
+    PUSH, __Boolean_5\r\n        JUMP_IF_FALSE, 0x00000354\r\n        PUSH, target\r\n       
     PUSH, __instance_9\r\n        COPY\r\n        PUSH, __instance_9\r\n        PUSH,
     __value_6\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        PUSH, __a_0\r\n        PUSH, __a_7\r\n        COPY\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_7\r\n        PUSH, __Boolean_7\r\n        EXTERN,
+    JUMP, 0x000004BC\r\n        PUSH, __a_0\r\n        PUSH, __a_6\r\n        COPY\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_6\r\n        PUSH, __Boolean_6\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_7\r\n        JUMP_IF_FALSE, 0x00000418\r\n        PUSH, target\r\n       
+    PUSH, __Boolean_6\r\n        JUMP_IF_FALSE, 0x000003CC\r\n        PUSH, target\r\n       
     PUSH, __instance_A\r\n        COPY\r\n        PUSH, __instance_A\r\n        PUSH,
     __value_7\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        PUSH, __a_0\r\n        PUSH, __a_8\r\n        COPY\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_8\r\n        PUSH, __Boolean_8\r\n        EXTERN,
+    JUMP, 0x000004BC\r\n        PUSH, __a_0\r\n        PUSH, __a_7\r\n        COPY\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_7\r\n        PUSH, __Boolean_7\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_8\r\n        JUMP_IF_FALSE, 0x00000490\r\n        PUSH, target\r\n       
+    PUSH, __Boolean_7\r\n        JUMP_IF_FALSE, 0x00000444\r\n        PUSH, target\r\n       
     PUSH, __instance_B\r\n        COPY\r\n        PUSH, __instance_B\r\n        PUSH,
     __value_8\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
-    JUMP, 0x00000490\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    JUMP, 0x000004BC\r\n        PUSH, __a_0\r\n        PUSH, __a_8\r\n        COPY\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_8\r\n        PUSH, __Boolean_8\r\n        EXTERN,
+    \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
+    PUSH, __Boolean_8\r\n        JUMP_IF_FALSE, 0x000004BC\r\n        PUSH, target\r\n       
+    PUSH, __instance_C\r\n        COPY\r\n        PUSH, __instance_C\r\n        PUSH,
+    __value_9\r\n        EXTERN, \"UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid\"\r\n       
+    JUMP, 0x000004BC\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -108,7 +111,7 @@ MonoBehaviour:
     nodes:
     - fullName: Variable_UnityEngineMaterial
       uid: 328242f2-1c34-43c4-b647-9ddb99f9250a
-      position: {x: -1340.5771, y: 183.98224}
+      position: {x: -2155.0562, y: 200.857}
       nodeUIDs:
       - 
       - 
@@ -154,27 +157,27 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Type_UnityEngineMeshRenderer
       uid: 7fcbe95c-08f3-4fe8-b455-62b76a2290b4
-      position: {x: 358.4249, y: -329.5838}
+      position: {x: 261.40005, y: -331.15}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
     - fullName: Event_Start
       uid: f17a0adc-00d7-45b0-ba24-dbcead93efc7
-      position: {x: 891.4249, y: -478.5838}
+      position: {x: 770.95013, y: -484.45}
       nodeUIDs: []
       flowUIDs:
       - 34289931-455e-4340-b17c-700ad59b2f3f
       nodeValues: []
     - fullName: Event_OnPickupUseDown
       uid: 80e80174-1b83-40e7-9229-393221d05380
-      position: {x: 208.38983, y: 324.68698}
+      position: {x: 418.34067, y: 322.1817}
       nodeUIDs: []
       flowUIDs:
       - 8b60bfd0-b8d6-4e86-8d98-c9a8f1b0359e
       nodeValues: []
     - fullName: UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent
       uid: ce0286e6-486b-4798-9cbf-463398a06008
-      position: {x: 600.42505, y: -374.5838}
+      position: {x: 588.35, y: -370.79996}
       nodeUIDs:
       - 
       - 7fcbe95c-08f3-4fe8-b455-62b76a2290b4
@@ -186,7 +189,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineMeshRenderer.__get_material__UnityEngineMaterial
       uid: bf7f5d2a-bf95-47c5-9b03-30c488b94680
-      position: {x: 808.4249, y: -375.5838}
+      position: {x: 843.45013, y: -377.05}
       nodeUIDs:
       - ce0286e6-486b-4798-9cbf-463398a06008
       flowUIDs: []
@@ -195,12 +198,13 @@ MonoBehaviour:
         stringValue: 
     - fullName: Set_Variable
       uid: 34289931-455e-4340-b17c-700ad59b2f3f
-      position: {x: 1002.4249, y: -478.5838}
+      position: {x: 1047.2501, y: -484.6}
       nodeUIDs:
       - 
       - bf7f5d2a-bf95-47c5-9b03-30c488b94680
       - 
-      flowUIDs: []
+      flowUIDs:
+      - cf8bbbd2-10b6-48ea-b4ca-c0e03a910269
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|328242f2-1c34-43c4-b647-9ddb99f9250a
@@ -324,7 +328,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: 9e136478-d80e-4750-b000-4848dae289a4
-      position: {x: 382.66168, y: -90.63176}
+      position: {x: 383.00003, y: -92.52087}
       nodeUIDs:
       - 
       - 152b7295-44d9-4dd3-8c23-4ee22408147d
@@ -726,10 +730,34 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null|{"r":0.9803921580314636,"g":0.7803921699523926,"b":0.2823529541492462,"a":0.0}
+    - fullName: UnityEngineMaterial.__set_color__UnityEngineColor__SystemVoid
+      uid: cf8bbbd2-10b6-48ea-b4ca-c0e03a910269
+      position: {x: 1318.0436, y: -479.594}
+      nodeUIDs:
+      - 84cfa3f0-8ccd-4895-8b32-52a3451e3a8e|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"r":0.11372549086809159,"g":0.18431372940540315,"b":0.43529412150382998,"a":0.0}
+    - fullName: Get_Variable
+      uid: 84cfa3f0-8ccd-4895-8b32-52a3451e3a8e
+      position: {x: 1095.5298, y: -279.70132}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|328242f2-1c34-43c4-b647-9ddb99f9250a
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
     updateOrder: 0
   graphElementData: []
   viewTransform:
-    position: {x: 273, y: 9}
+    position: {x: 283, y: 176}
     scale: 0.32690176
   version: 1.0.0
   showAssembly: 0
